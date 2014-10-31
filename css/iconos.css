@@ -1,0 +1,98 @@
+@font-face {
+	font-family: 'iconos';
+	src:url('../iconos/icomoon.eot?7i6jl7');
+	src:url('../iconos/icomoon.eot?#iefix7i6jl7') format('embedded-opentype'),
+		url('../iconos/icomoon.woff?7i6jl7') format('woff'),
+		url('../iconos/icomoon.ttf?7i6jl7') format('truetype'),
+		url('../iconos/icomoon.svg?7i6jl7#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.bici:before {
+	content: "\e605";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
+.comer:before {
+	content: "\e60e";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
+.divertido:before {
+	content: "\e60a";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
+.dormir:before {
+	content: "\e607";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
+.eco:before {
+	content: "\e606";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
+.flamingo:before {
+	content: "\e60d";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
+.iglesia:before {
+	content: "\e603";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
+.piramide:before {
+	content: "\e60c";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
+.pueblo:before {
+	content: "\e604";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
+.pueblo2:before {
+	content: "\e609";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
+.servicios:before {
+	content: "\e60b";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
+.subir:before {
+	content: "\e600";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
+
+
