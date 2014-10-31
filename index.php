@@ -52,6 +52,7 @@
                             <li><a class="show-2" href="#"><?php echo $palabra->idioma[$_SESSION['idioma']][5]; ?><!-- Vivefcp --></a></li>
                             <li><a class="show-3" href="#"><?php echo $palabra->idioma[$_SESSION['idioma']][6]; ?><!-- conoce --></a></li>
                             <li><a class="show-4" href="#"><?php echo $palabra->idioma[$_SESSION['idioma']][7]; ?><!-- foro --></a></li>
+                            <li><a class="show-5" href="#">Contacto</a></li>
                         </ul> <!-- /.menu -->
                         <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
                     </div> <!-- /.menu-wrapper -->

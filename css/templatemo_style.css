@@ -480,7 +480,7 @@ ul.tabs {
 /* ==========================================================================
     Contact Styling
    ========================================================================== */
-.google-map {
+/*.google-map {
     height: 250px;
     padding: 6px;
     background-color: white;
@@ -488,10 +488,10 @@ ul.tabs {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */;
+   stops bg color from leaking outside the border: ;
 }
 
-.google-map iframe {
+/*.google-map iframe {
     width: 100%;
     outline: 0;
     border: 0;
@@ -500,10 +500,10 @@ ul.tabs {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */;
-}
+   stops bg color from leaking outside the border: ;
+}*/
 
-form input, form textarea {
+/*form input, form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 30px;
@@ -513,9 +513,9 @@ form input, form textarea {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */;
-}
-
+   stops bg color from leaking outside the border: ;
+}*/
+/*
 .contact-form textarea {
     min-height: 160px;
 }
@@ -541,7 +541,7 @@ form input, form textarea {
 
 .footer a {
     color: white;
-}
+}*/
 
 /*------------------------------------------------------
 	RESPONSIVE STYLES 
