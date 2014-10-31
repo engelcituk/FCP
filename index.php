@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/component.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/iconos.css">
+    <link rel="stylesheet" href="css/flat-ui.css">
     <link rel="stylesheet" href="css/templatemo_misc.css">
     <link rel="stylesheet" href="css/templatemo_style.css">
 
@@ -66,6 +67,8 @@
                 <?php include "aventura.php" ?>
                 <?php include "vive.php" ?>
                 <?php include "conoce.php" ?>
+                <?php include "foro.php" ?>
+                <?php include "contacto.php" ?>
                 
                 </div> <!-- /#menu-container -->
             </div> <!-- /.col-md-8 -->

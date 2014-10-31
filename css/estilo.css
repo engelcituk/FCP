@@ -158,4 +158,9 @@
     50%{-webkit-transform:scale(1.2,1.2);}
     100%{-webkit-transform:scale(1,1);}
 }
-/**/
+/*formulario de contacto*/
+.login-form{
+    background-color: #EDEFF1;
+    padding: 1em;
+    margin:1em;
+}
