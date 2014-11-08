@@ -25,13 +25,14 @@
     <link rel="stylesheet" href="css/component.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/iconos.css">
+    <link rel="stylesheet" href="css/flat-ui.css">
     <link rel="stylesheet" href="css/templatemo_misc.css">
     <link rel="stylesheet" href="css/templatemo_style.css">
 
     <script src="js/modernizr-2.6.2.min.js"></script>
     <script src="js/jquery-1.10.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    // <script src="js/idiomas.js"></script>
+    <script src="js/idiomas.js"></script>
 </head>
 <body>    
     <div class="container-fluid">
@@ -39,10 +40,12 @@
             <div class="col-md-4 col-sm-12">
                 <div class="sidebar-menu">
                     <header class="logo-wrapper">
+
                         <select class="form-control"id="select_idioma" name="select_idioma" onchange="cambio_idioma()">
                             <option <?php if($_SESSION['idioma']=="espanol") echo "selected='selected'" ?> value="espanol"><?php echo $palabra->idioma[$_SESSION['idioma']][0]; ?></option>
                             <option <?php if($_SESSION['idioma']=="ingles") echo "selected='selected'" ?> value="ingles"><?php echo $palabra->idioma[$_SESSION['idioma']][1]; ?></option>
                         </select>
+
                        <h1 class="logo"><a rel="nofollow"><img id="logo" class="img-responsive" src="images/logo.png" alt="zona maya"></a></h1>
                     </header> <!-- /.logo-wrapper -->
                     <div class="menu-wrapper">
@@ -52,6 +55,7 @@
                             <li><a class="show-2" href="#"><?php echo $palabra->idioma[$_SESSION['idioma']][5]; ?><!-- Vivefcp --></a></li>
                             <li><a class="show-3" href="#"><?php echo $palabra->idioma[$_SESSION['idioma']][6]; ?><!-- conoce --></a></li>
                             <li><a class="show-4" href="#"><?php echo $palabra->idioma[$_SESSION['idioma']][7]; ?><!-- foro --></a></li>
+                            <li><a class="show-5" href="#">Contacto</a></li>
                         </ul> <!-- /.menu -->
                         <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
                     </div> <!-- /.menu-wrapper -->
@@ -65,6 +69,8 @@
                 <?php include "aventura.php" ?>
                 <?php include "vive.php" ?>
                 <?php include "conoce.php" ?>
+                <?php include "foro.php" ?>
+                <?php include "contacto.php" ?>
                 
                 </div> <!-- /#menu-container -->
             </div> <!-- /.col-md-8 -->

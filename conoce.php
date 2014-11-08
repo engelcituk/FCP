@@ -1,12 +1,12 @@
 <div id="menu-3" class="about content">
                         <div class="row">
                             <ul class="tabs submenu ">
-                                <li  class="Conoce col-md-2 col-sm-2 col-xs-4"><a id ="aventura" href="#tab9" title=""><span class="icon"><i aria-hidden="true" class="fa iglesia"></i></span><span>Señor</span></a></li>
-                                <li  class="Conoce col-md-2 col-sm-2 col-xs-4"><a id ="aventura" href="#tab10" title=""><span class="icon"><i aria-hidden="true" class="fa pueblo "></i></span><span>Tihosuco</span></a></li>
-                                <li  class="Conoce col-md-2 col-sm-2 col-xs-4"><a id ="aventura" href="#tab11" title=""><span class="icon"><i aria-hidden="true" class="fa pueblo2 "></i></span><span>Felipe Carrillo Puerto</span></a></li>
-                                <li  class="Conoce col-md-2 col-sm-2 col-xs-4"><a id ="aventura" href="#tab12" title=""><span class="icon"><i aria-hidden="true" class="fa iglesia"></i></span><span>Punta Herrero</span></a></li>
-                                <li  class="Conoce col-md-2 col-sm-2 col-xs-4"><a id ="aventura" href="#tab13" title=""><span class="icon"><i aria-hidden="true" class="fa pueblo "></i></span><span>Chunhuhub</span></a></li>
-                                <li  class="Conoce col-md-2 col-sm-2 col-xs-4"><a id ="aventura" href="#tab14" title=""><span class="icon"><i aria-hidden="true" class="fa pueblo2"></i></span><span>Muyil</span></a></li>
+                                <li  class="Conoce col-md-2 col-sm-2 col-xs-4"><a id ="aventura" href="#tab9" title=""><span class="icon"><i aria-hidden="true" class="fa lagunasenor"></i></span><span>Señor</span></a></li>
+                                <li  class="Conoce col-md-2 col-sm-2 col-xs-4"><a id ="aventura" href="#tab10" title=""><span class="icon"><i aria-hidden="true" class="fa tihosuco "></i></span><span>Tihosuco</span></a></li>
+                                <li  class="Conoce col-md-2 col-sm-2 col-xs-4"><a id ="aventura" href="#tab11" title=""><span class="icon"><i aria-hidden="true" class="fa pueblo "></i></span><span>Felipe Carrillo Puerto</span></a></li>
+                                <li  class="Conoce col-md-2 col-sm-2 col-xs-4"><a id ="aventura" href="#tab12" title=""><span class="icon"><i aria-hidden="true" class="fa puntaherrero"></i></span><span>Punta Herrero</span></a></li>
+                                <li  class="Conoce col-md-2 col-sm-2 col-xs-4"><a id ="aventura" href="#tab13" title=""><span class="icon"><i aria-hidden="true" class="fa chunhuhub "></i></span><span>Chunhuhub</span></a></li>
+                                <li  class="Conoce col-md-2 col-sm-2 col-xs-4"><a id ="aventura" href="#tab14" title=""><span class="icon"><i aria-hidden="true" class="fa muyil"></i></span><span>Muyil</span></a></li>
                             </ul> <!-- /.tabs -->
                         </div>
                         <div class="row">
