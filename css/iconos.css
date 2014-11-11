@@ -8,6 +8,7 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
 .bailando:before {
 	content: "\e606";
 	font-size: 1.3em;
@@ -17,6 +18,12 @@
 .bici:before {
 	content: "\e602";
 	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
+.buscar:before {
+	content: "\e62a";
+	font-size: 1em;
 	color:black;
 	font-family:iconos; 
 }
@@ -49,8 +56,26 @@
 	color:black;
 	font-family:iconos; 
 }
+.contenido:before {
+	content: "\e634";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
+.conversacion:before {
+	content: "\e630";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
 .corazon:before {
 	content: "\e620";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
+.correo:before {
+	content: "\e629";
 	font-size: 1.3em;
 	color:black;
 	font-family:iconos; 
@@ -65,6 +90,12 @@
 	content: "\e605";
 	font-size: 1.3em;
 	color:black;
+	font-family:iconos; 
+}
+.entrar:before {
+	content: "\e62c";
+	font-size: 1em;
+	color:white;
 	font-family:iconos; 
 }
 .escuela:before {
@@ -82,6 +113,12 @@
 .estrella:before {
 	content: "\e61f";
 	font-size: 1.3em;
+	color:yellow;
+	font-family:iconos; 
+}
+.etiqueta:before {
+	content: "\e635";
+	font-size: 1em;
 	color:black;
 	font-family:iconos; 
 }
@@ -97,8 +134,20 @@
 	color:black;
 	font-family:iconos; 
 }
+.flechaArriba:before {
+	content: "\e62f";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
 .github:before {
 	content: "\e624";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
+.historia:before {
+	content: "\e633";
 	font-size: 1.3em;
 	color:black;
 	font-family:iconos; 
@@ -175,6 +224,12 @@
 	color:black;
 	font-family:iconos; 
 }
+.nuevo:before {
+	content: "\e62d";
+	font-size: 1.3em;
+	color:black;
+	font-family:iconos; 
+}
 .pantalla:before {
 	content: "\e61b";
 	font-size: 1.3em;
@@ -211,6 +266,30 @@
 	color:black;
 	font-family:iconos; 
 }
+.registrar:before {
+	content: "\e62b";
+	font-size: 1em;
+	color:white;
+	font-family:iconos; 
+}
+.respuesta:before {
+	content: "\e631";
+	font-size: 1em;
+	color:white;
+	font-family:iconos; 
+}
+.respuesta2:after {
+	content: "\e632";
+	font-size: 1em;
+	color:black;
+	font-family:iconos; 
+}
+.salir:before {
+	content: "\e62e";
+	font-size: 1em;
+	color:white;
+	font-family:iconos; 
+}
 .servicios:before {
 	content: "\e611";
 	font-size: 1.3em;
@@ -235,6 +314,12 @@
 	color:black;
 	font-family:iconos; 
 }
+.suscripcion:before {
+	content: "\e636";
+	font-size: 1em;
+	color:white;
+	font-family:iconos; 
+}
 
 .tihosuco:before{
 	content: "\e612";
@@ -252,5 +337,11 @@
 	content: "\e627";
 	font-size: 1.3em;
 	color:black;
+	font-family:iconos; 
+}
+.usuario2:before {
+	content: "\e627";
+	font-size: 1em;
+	color:white;
 	font-family:iconos; 
 }
