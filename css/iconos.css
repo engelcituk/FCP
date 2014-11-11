@@ -272,6 +272,12 @@
 	color:white;
 	font-family:iconos; 
 }
+.registrados:before {
+	content: "\e62b";
+	font-size: 1em;
+	color:black;
+	font-family:iconos; 
+}
 .respuesta:before {
 	content: "\e631";
 	font-size: 1em;

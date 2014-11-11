@@ -1,5 +1,9 @@
 <?php
 	session_start();
+	if (!isSet($_SESSION['usuario'])) {
+		header("Location:index.php");
+		exit();
+	}
 	include "conexion.inc" ;
 	include "plugins.php" ;
 	if (isSet($_GET['tid']) && isSet($_GET['puntuacion'])) {

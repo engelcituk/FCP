@@ -151,9 +151,21 @@
     padding: 1em;
     margin:1em;
 }
-
+/*fin de estilo a formulario de contacto*/
+.container{
+    padding: 1em;
+    height: 100%;
+    /*margin: 1em;*/ /*en prueba*/
+}
+.fondoTabla{
+    background-color: #EDEFF1;
+}
 .bienvenidoUsuario{
     color: white;
+}
+.contenidoLista{
+    margin: 0;
+    padding:0;
 }
 .navUsuario{
     padding-top: .4em;
@@ -161,4 +173,7 @@
 .tituloTabla{
     background: rgba(52, 73, 94,1.0);
     color: white;
+}
+.fondoForo{
+    background: #36D7B7;
 }

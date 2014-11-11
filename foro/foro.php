@@ -6,7 +6,7 @@
 	<body>
 	
 		<!--  -->
-<div class="container">
+<div class="container fondoForo">
 <?php
 session_start();
 if (!isSet($_SESSION['usuario'])) {
@@ -88,7 +88,7 @@ if (!isSet($_SESSION['usuario'])) {
 			</tbody>
 		</table>
 		<br/>
-		<table class="table table-condensed table-hover table-bordered">
+		<table class="table table-condensed table-bordered fondoTabla">
 		<thead>
 			
 		</thead>

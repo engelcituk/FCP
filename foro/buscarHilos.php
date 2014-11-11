@@ -1,6 +1,10 @@
 <?php
 include "plugins.php";
 	session_start();
+	if (!isSet($_SESSION['usuario'])) {
+		header("Location:index.php");
+		exit();
+	}
 	include "conexion.inc";
 	$retornos = '<table><tbody>';
 	$buscarUsuarios = '<table><tbody>';

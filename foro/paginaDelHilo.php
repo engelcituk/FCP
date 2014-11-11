@@ -84,25 +84,26 @@
 			//fin etiquetas
 			// aqui es donde inicia el hilo de respuestas
 			$qu = mysqli_query($con, "SELECT * FROM respuestas WHERE IDhilo='$id'");
-			if (mysqli_num_rows($qu) > 0) {
+			if (mysqli_num_rows($qu) >= 0) {
 				$respuestas = '
-			<div class="col-md-12">
-				<div class="panel panel-info">
-					<div class="panel-heading ">
-						<h3 class="panel-title respuesta2">Respuestas </h3>
+				
+				<div class="col-md-12">
+					<div class="panel panel-info">
+						<div class="panel-heading ">
+							<h3 class="panel-title respuesta2">Respuestas </h3>
+						</div>
+						<div class="panel-body contenidoLista">
+							';
+								while ($fila = mysqli_fetch_array($qu)) {
+									$respuestas .= '
+									<div class="well conversacion contenidoLista">
+								' .$fila["autor"].': ' .$fila["contenido"].'
+									</div>';
+								}
+						$respuestas .= '
+						</div>
 					</div>
-					<div class="panel-body">
-						';
-							while ($fila = mysqli_fetch_array($qu)) {
-								$respuestas .= '
-								<div class="well conversacion">
-							' .$fila["autor"].': ' .$fila["contenido"].'
-								</div>';
-							}
-					$respuestas .= '
-					</div>
-				</div>
-			</div>';
+				</div>';
 			}
 			// fin del hilo de respuestas :)
 
@@ -121,9 +122,10 @@
 	echo "
 <html>
 	<head>
+		<title>Pagina del tema</title>
 	</head>
 		<body>
-			<div class='container'>
+			<div class='container fondoForo'>
 				
 				<!--inicio de seccion de seccion de cerrar sesión -->
 
@@ -144,7 +146,7 @@
 							<div class='panel-heading'>
 								<h3 class='panel-title'><strong>Agregarle puntuacion al tema<strong></h3>
 							</div>
-							<div class='panel-body'>
+							<div class='panel-body contenidoLista'>
 								<a class='estrella' href='valoracionHilo.php?tid=$id&puntuacion=1'>1</a>
 								<a class='estrella' href='valoracionHilo.php?tid=$id&puntuacion=2'>2</a>
 								<a class='estrella' href='valoracionHilo.php?tid=$id&puntuacion=3'>3</a>
@@ -165,7 +167,7 @@
 								}else {
 									$promedio = $todo / $total;
 									echo '
-									<div class="panel-footer">
+									<div class="panel-footer contenidoLista">
 										El promedio del tema =
 
 									'; echo round($promedio,2);echo ' <span class="estrella"></span>
@@ -184,10 +186,10 @@
 							<div class='panel-heading'>
 								<h3 class='panel-title'>$titulo</h3>
 							</div>
-							<div class='panel-body'>
+							<div class='panel-body contenidoLista'>
 								<p>$contenido</p>
 							</div>
-							<div class='panel-footer'>
+							<div class='panel-footer contenidoLista'>
 								Por $autor
 							</div>
 						</div>
@@ -203,11 +205,10 @@
 						<div class='login-form'>
 								<legend>Responder a $usuario</legend>
 							<div class='form-group'>
-								<textarea class='form-control' type='text' name='contenido' rows='2' placeholder='mensaje:' required/>
-								</textarea>
+								<textarea class='form-control' rows='3' name='contenido' placeholder='contenido' required></textarea>
 								<label class='login-field-icon escribir'></label>
 								<br>
-								<button class='btn btn-primary respuesta' type='submit' name='respuestaEnviada'/> Publicar Respuesta<button>
+								<button class='btn btn-primary respuesta' type='submit' name='respuestaEnviada'/> Publicar Respuesta</button>
 							</div>
 						</div>
 					</div>
@@ -224,9 +225,9 @@
 						<div class="login-form">
 							<div class="form-group">
 							<legend>Suscribirse al tema</legend>
-								<input class="form-control" type="text" name="email" placeholder="Email: usuario@mail.com"/>
+								<input class="form-control" type="email" name="email" placeholder="Email: usuario@mail.com" required/>
 								<br/>
-								<button class ="btn btn-primary suscripcion" type="submit" name="suscribe"/> Suscribirse"</button>
+								<button class ="btn btn-primary suscripcion" type="submit" name="suscribe"/> Suscribirse</button>
 							</div>
 						</div>
 				</div>
