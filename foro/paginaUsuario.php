@@ -33,7 +33,7 @@
 	echo "
 	<html>
 		<head>
-		
+			<meta charset='utf-8'>
 			<title>Pagina del usuario</title>
 		</head>
 		<body>

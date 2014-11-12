@@ -76,6 +76,7 @@
 							<a href='foro.php' class='dropdown-toggle bienvenidoUsuario'data-toggle='dropdown'><span> </span><?php echo " <a href='#' class='dropdown-toggle usuario2 bienvenidoUsuario'data-toggle='dropdown'><span> </span>".$_SESSION['usuario']."</a>" ?>;</a>'
 								<ul class='dropdown-menu'>
 									<li><a href='miembros.php'>Ver Miembros Registrados</a></li>
+									<li><a href='foro.php'>Ir al foro</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -94,7 +95,7 @@
 			<?php //echo $mensajes; ?>-->
 				<div class="col-md-6">
 					<div class="login-form">
-							<legend>Change contrasena:</legend>
+							<legend>Cambiar contraseña:</legend>
 								<form action='paginaCuenta.php' method='POST'>
 									<div class="form-group">
 										<input class="form-control" type='password' name='contraActual' placeholder="Current contrasena:" required/>
