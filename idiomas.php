@@ -23,7 +23,8 @@ class idiomas{
                 15=>"Descripción",
                 16=>"Localización",
                 17=>"Cruz Parlante",
-                18=>"Muyil"
+                18=>"Muyil",
+                // 19=>"Usuarios Registrados"
             ),
             'ingles' => array(
                 0=>"Spanish",
@@ -44,7 +45,8 @@ class idiomas{
                 15=>"Description",
                 16=>"Location",
                 17=>"Cruz Parlante",
-                18=>"Muyil"
+                18=>"Muyil",
+                // 19=>"Registered Users"
 
             )
         );

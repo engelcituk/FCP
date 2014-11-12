@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <?php
 include "plugins.php";
 	session_start();

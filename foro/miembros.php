@@ -17,11 +17,13 @@
 ?>
 <html>
 	<head>
+	<meta charset="utf-8">
 		<title>Miembros</title>
 	</head>
 	<body>
 		<div class="container">
 			<div class="row">
+
 				<?php if (isSet($lista)){ echo $lista; } ?>
 			</div>
 		</div>

@@ -42,7 +42,9 @@ include "plugins.php";
 	$retornos .= '</tbody></table>';
 ?>
 <html>
-	<head></head>
+	<head>
+		<meta charset="utf-8">
+	</head>
 	<body>
 		<h1>Hilos:</h1>
 		<?php echo $retornos; ?>

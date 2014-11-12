@@ -33,13 +33,22 @@
 	echo "
 	<html>
 		<head>
+		
 			<title>Pagina del usuario</title>
 		</head>
 		<body>
 				<div class='container'>
 				<div class='row navbar navbar-inverse'>
 					<div class='col-xs-6 col-sm-6 col-md-2 col-lg-2 navUsuario'>
-						<p class='bienvenidoUsuario usuario2'> $usuario</p>
+						<ul>
+							<li class='dropdown'>
+							<a href='foro.php' class='dropdown-toggle usuario2 bienvenidoUsuario'data-toggle='dropdown'><span> </span>Temas de conversacion</a>' 
+								<ul class='dropdown-menu'>
+									<li><a href='miembros.php'>Ver Miembros Registrados</a></li>
+									<li><a href='paginaCuenta.php'>Ver mi pagina de cuenta</a></li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 					<div class=' col-xs-6 col-sm-6 col-md-offset-8 col-md-2 col-md-offset-8 col-lg-1 navUsuario'>
 						<a href='cerrarsesion.php' class='btn btn-danger salir'> Cerrar Sesion</a>
@@ -83,10 +92,10 @@
 			</body>
 		</html>";
 	}else
-		echo 'Este usuario aun no tiene temas creados!';
+		echo '<div class="alert alert-danger alert-dismissable">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<strong>Este usuario aun no tiene temas creados!:/. <a href="miembros.php" class="btn btn-danger">volver</a></div>';
+
 ?>
 
-<!-- <div class="form-group">
-								<textarea class="form-control" rows="3" name="descripcion" placeholder="contenido" required></textarea>
-								<label class="login-field-icon contenido" ></label>
-					</div> -->
+

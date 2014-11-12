@@ -1,3 +1,4 @@
+
 <?php
 	session_start();
 	if (!isSet($_SESSION['usuario'])) {
@@ -62,10 +63,27 @@
 	}
 ?>
 <html>
-	<head></head>
+	<head>
+		<meta charset="utf-8">
+	</head>
 	<body>
 		<div class='container'>
 			<div class="row">
+			<div class='row navbar navbar-inverse'>
+					<div class='col-xs-6 col-sm-6 col-md-2 col-lg-2 navUsuario'>
+						<ul>
+							<li class='dropdown'>
+							<a href='foro.php' class='dropdown-toggle bienvenidoUsuario'data-toggle='dropdown'><span> </span><?php echo " <a href='#' class='dropdown-toggle usuario2 bienvenidoUsuario'data-toggle='dropdown'><span> </span>".$_SESSION['usuario']."</a>" ?>;</a>'
+								<ul class='dropdown-menu'>
+									<li><a href='miembros.php'>Ver Miembros Registrados</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class=' col-xs-6 col-sm-6 col-md-offset-8 col-md-2 col-md-offset-8 col-lg-1 navUsuario'>
+						<a href='cerrarsesion.php' class='btn btn-danger salir'> Cerrar Sesion</a>
+					</div>
+				</div>
 				<div class="col-md-6">
 					<div class="jumbotron">
 						<div class="alert alert-info"><?php echo $usuario; ?></div>

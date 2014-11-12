@@ -9,6 +9,14 @@
 <div class="container fondoForo">
 <?php
 session_start();
+
+
+    if(!isset($_SESSION['idioma'])){
+        $_SESSION['idioma']="espanol";
+    }
+    require '../idiomas.php';
+    $palabra = new idiomas();
+
 if (!isSet($_SESSION['usuario'])) {
 		header("Location:index.php");
 		exit();
@@ -45,7 +53,15 @@ if (!isSet($_SESSION['usuario'])) {
 ?>
 <nav class="row navbar navbar-inverse">
 	<div class="col-xs-12 col-md-6 navUsuario ">
-		<?php echo " <p class='usuario2 bienvenidoUsuario'><strong> Bienvenid@: ".$_SESSION['usuario']." </strong></p>"; ?>
+		<ul>
+			<li class="dropdown">
+			<?php echo " <a href='#' class='dropdown-toggle usuario2 bienvenidoUsuario'data-toggle='dropdown'><span> </span>".$_SESSION['usuario']."</a>" ?>;
+				<ul class="dropdown-menu">
+					<li><a href="miembros.php">Ver Miembros Registrados</a></li>
+					<li><a href="paginaCuenta.php">Ver mi pagina de cuenta</a></li>
+				</ul>
+			</li>
+		</ul>
 	</div>
 	<div class="col-xs-12 col-md-6 navUsuario">
 		<form class="form-inline" action="buscarHilos.php" method="POST" role="form">
@@ -107,7 +123,7 @@ if (!isSet($_SESSION['usuario'])) {
 		<div class="col-md-6">
 				<form action="foro.php" method="POST" role="form">
 					<div class="login-form">
-					<legend>Crear tema de conversacion</legend>
+					<legend>Usuarios Registrados</legend>
 						<div class="form-group ">
 								<input class="form-control" type='text' name='titulo' placeholder="Titulo" required/>
 								<label class="login-field-icon escribir" ></label>

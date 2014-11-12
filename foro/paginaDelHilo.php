@@ -122,16 +122,25 @@
 	echo "
 <html>
 	<head>
+	<meta charset='utf-8'>
 		<title>Pagina del tema</title>
 	</head>
 		<body>
 			<div class='container fondoForo'>
-				
+
 				<!--inicio de seccion de seccion de cerrar sesión -->
 
 				<div class='row navbar navbar-inverse'>
 					<div class='col-xs-6 col-sm-6 col-md-2 col-lg-2 navUsuario'>
-						<p class='bienvenidoUsuario usuario2'> $usuario</p>
+						<ul>
+							<li class='dropdown'>
+							<a href='foro.php' class='dropdown-toggle usuario2 bienvenidoUsuario'data-toggle='dropdown'><span> </span>$usuario</a>' 
+								<ul class='dropdown-menu'>
+									<li><a href='miembros.php'>Ver Miembros Registrados</a></li>
+									<li><a href='paginaCuenta.php'>Ver mi pagina de cuenta</a></li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 					<div class=' col-xs-6 col-sm-6 col-md-offset-8 col-md-2 col-md-offset-8 col-lg-1 navUsuario'>
 						<a href='cerrarsesion.php' class='btn btn-danger salir'> Cerrar Sesion</a>
@@ -144,7 +153,7 @@
 					<div class='col-md-6'>
 						<div class='panel panel-success'>
 							<div class='panel-heading'>
-								<h3 class='panel-title'><strong>Agregarle puntuacion al tema<strong></h3>
+								<h3 class='panel-title'><strong>Agregarle puntuación al tema<strong></h3>
 							</div>
 							<div class='panel-body contenidoLista'>
 								<a class='estrella' href='valoracionHilo.php?tid=$id&puntuacion=1'>1</a>

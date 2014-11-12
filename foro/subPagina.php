@@ -1,3 +1,5 @@
+
+<meta charset="utf-8">
 <?php
 	session_start();
 	if (!isSet($_SESSION['usuario'])) {
@@ -36,7 +38,7 @@
 			if (mysqli_num_rows($qu) > 0) {
 	    $mensaje = 'Una nueva respuesta a sido enviada a la conversacion a la que estas suscrito';
 	     while ($fila = mysqli_fetch_array($qu)) {
-		mail($fila['email'], 'Bueva Respuesta', $mensaje);
+		mail($fila['email'], 'Nueva Respuesta', $mensaje);
 	 }
   }
  }
