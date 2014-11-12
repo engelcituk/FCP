@@ -1,3 +1,11 @@
 <?php 
-$con = mysqli_connect('localhost', 'root', '', 'zonamaya2') or die(mysql_error());
+$servidor = "localhost";
+$usuario = "root";
+$contrasena = "";
+$basededatos = "zonamaya2";
+
+$con = mysqli_connect($servidor,$usuario,$contrasena,$basededatos);
+mysqli_set_charset($con, "utf8");
+
  ?>
+
