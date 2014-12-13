@@ -13,9 +13,7 @@ include "plugins.php";
 		$s = strtolower($s);
 		$ss = explode(' ', $s);
 		$q = mysqli_query($con, "SELECT * FROM hilos");
-		
 		if (mysqli_num_rows($q) > 0) {
-
 			while ($fila = mysqli_fetch_array($q)) {
 				$tieneEtiqueta = false;
 				if ($fila['etiquetas'] != '') {
@@ -23,39 +21,35 @@ include "plugins.php";
 					for ($i=0;$i<count($ss);$i++) {
 						if (strpos($etiquetas, $ss[$i]) !== false) {
 							$tieneEtiqueta = true;
-						} //  fin de if
-					} //  fin de for
-				}//  fin de if ($fila['etiquetas'] != '')
+						}
+					}
+				}
 				if ($tieneEtiqueta) {
 					$retornos .= '<tr><td><a href="paginaDelHilo.php?tid='.$fila["id"].'">'.$fila["titulo"].'</a></td></tr>';
 				}
-			}// fin de while
-		}//fin de if (mysqli_num_rows($q) > 0)
+			}
+		}
+		$sQ = $_POST['busquedaConsulta'];
+		$uQ = mysqli_query($con, "SELECT * FROM usuarios WHERE usuario='$sQ'");
+		if (mysqli_num_rows($uQ) > 0) {
+			while ($fila = mysqli_fetch_array($uQ)) {
+				$usuario = $fila['usuario'];
+				$buscarUsuarios .= '<tr><td><a href="paginaUsuario.php?usuario='.$usuario.'">'.$usuario.'</a></td></tr>';
+			}
+		}
 	}
 	$buscarUsuarios .= '</tbody></table>';
 	$retornos .= '</tbody></table>';
-
 ?>
 <html>
 	<head>
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<div class="container">
-			<div class="row">
-				<div class="alert alert-danger alert-dismissable">
-					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-					<strong>Advertencia: </strong> Si no existe resultado en su búsqueda, puede crear el tema.
-				</div>
-				<div class="panel panel-success">
-					<div class="panel-heading">
-						<h3 class="panel-title">Tema encontrado, relacionado con esa etiqueta</h3>
-					</div>
-					<div class="panel-body">
-						<?php echo $retornos; ?>
-					</div>
-				</div>
-			</div>
-		</div>
+		<h1>Hilos:</h1>
+		<?php echo $retornos; ?>
+		<br/>
+		<!-- <h1>Usuarios:</h1>
+		// <?php echo $buscarUsuarios; ?> -->
 	</body>
 </html>

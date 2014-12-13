@@ -1,7 +1,6 @@
 
 <html>
 	<head>
-	<meta charset="utf-8">
 	<?php include "plugins.php"; ?>
 	</head>
 	<body>
@@ -71,7 +70,7 @@ if (!isSet($_SESSION['usuario'])) {
 			</div>
 			<div class="form-group">
 				<button class="btn btn-primary buscar" type='submit' name='busquedaEnviado'> Buscar Tema</button>
-				<a class="btn btn-danger salir" href="cerrarsesion.php"> Cerrar Sesión</a>
+				<a class="btn btn-danger salir" href="cerrarsesion.php"> Cerrar Sesion</a>
 			</div>
 		</form>
 	</div>
@@ -124,7 +123,7 @@ if (!isSet($_SESSION['usuario'])) {
 		<div class="col-md-6">
 				<form action="foro.php" method="POST" role="form">
 					<div class="login-form">
-					<legend>Crear tema de conversacion</legend>
+					<legend>Usuarios Registrados</legend>
 						<div class="form-group ">
 								<input class="form-control" type='text' name='titulo' placeholder="Titulo" required/>
 								<label class="login-field-icon escribir" ></label>
